@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(55, 55, 57);
+            color: white;
+        }
+        form{
+            height:100vh;
+            width:100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        form input{
+            background-color: white;
+            color: black;
+            width: 50%;
+            height: 7vh;
+            margin-top:5px;
+            text-align: center;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+        }
+        #submit{
+            background-color: rgb(215, 73, 47);
+        }
+        #submit:hover{
+            background-color: rgb(249, 220, 106);
+        }
+         
+    </style>
+</head>
+<body>
+    <center>
+        
+         <form action="/register" method="POST">
+            <h1>MERN PROJECT</h1>   
+            <input type="text" placeholder="Your name" name="name">
+            <input type="text" placeholder="Your email" name="email">
+            <input type="number" placeholder="Your phone" name="phone">
+            <input type="password" placeholder="Password" name="password">
+            <input type="password" placeholder="Confirm Password" name="cnfpass">
+            <input type="submit" value="Register" id="submit">
+        </form>
+    </center>
+</body>
+</html>
